@@ -1,0 +1,416 @@
+@import "variables.less";
+@import "mixins.less";
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: @fonts;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+    @media(min-width:768px) {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @fonts;    
+}
+
+@media only screen and (min-width: 668px) {
+    h1 {
+        font-size: 7rem;
+        font-size: 70px;
+    }
+}
+
+//intro
+
+.intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background: url(../img/intro-frontend.jpg) no-repeat #f2bc32;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 40px;
+        }
+        .intro-text, .hello-text {
+            font-size: 18px;
+        }
+        .intro-text {
+            color: @secondary;
+        }
+        .hello-text {
+            	margin: 0 0 20px;
+        }
+    }
+    @media(min-width:768px) {
+        padding: 0;
+        .intro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text, .hello-text {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    font-size: 40px;
+    color: white;
+    background: transparent;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    &:hover,
+    &:focus {
+        outline: none;
+        color: white;
+        background: fade(white, 10%);
+    }
+    &:hover {
+        /* border: 3px solid white; */
+    }
+    i.animated {
+        -webkit-transition-property: -webkit-transform;
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-property: -moz-transform;
+        -moz-transition-duration: 0.5s;
+    }
+        i.animated {
+            -webkit-animation-name: pulse;
+            -moz-animation-name: pulse;
+            -webkit-animation-duration: 2s;
+            -moz-animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: @fonts;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+}
+
+.btn-default {
+    border: 1px solid @primary;
+    color: @primary;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        border: 1px solid @primary;
+        outline: none;
+        color: black;
+        background-color: @primary;
+    }
+}
+
+//Portfolio
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+.page-header {
+	margin-bottom: @bottommargin;
+}
+
+div#works-bg {
+    background: #0A80A4;
+    padding-bottom: @bottommargin;
+}
+
+div#works-bg, div#works-bg a {
+    color: white;
+}
+
+div#works-bg a:hover {
+    color: @colorportfolio;
+}
+
+div#works-bg a:hover, div#works-bg a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.colio-content {
+    margin-top: 25px;
+    .project-desc {
+        text-align: left;
+        color: darken(@colorportfolio, 10%);
+    }
+    h2 {
+        font-size: 18px;
+    }
+    @media(min-width:768px) {
+        h2 {
+            margin-bottom: 25px;
+            font-size: 34px;
+        }
+    }
+}
+
+.colio-container {
+    padding: 40px 0px;
+    .col-md-12, .col-lg-6  {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    @media(min-width:768px) {
+        padding: 40px;
+        .col-md-12, .col-lg-6  {
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+    }
+
+}
+
+.btn-visit {
+    border: 1px solid @colorportfolio;
+    background: rgba(255,255,255,.12);
+    @media(min-width:768px) {
+        padding: 15px 45px;
+    }
+
+}
+
+.btn-visit:hover{
+    color: white;
+    background: rgba(31,73,110,.3);
+}
+
+.btn-visit span {
+    font-weight: bold;
+}
+
+.portfolio-item div.transition {
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    border:2px solid transparent;
+    background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+    background: url(../img/tick11.png) 50% 50% no-repeat rgb(31, 73, 110);
+}
+
+#colio-items .portfolio-item:not(.colio-active-item) {
+    .transition{
+        background: url(../img/zoom.png) 50% 50% no-repeat rgb(31, 73, 110);
+    }
+}
+
+.colio-active-item div.transition, .portfolio-item div.transition:hover {
+    border: 2px solid white;
+}
+
+.portfolio-item img {
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+
+}
+
+.colio-active-item img, .portfolio-item img:hover {
+    opacity:0.1;
+}
+
+.colio-content img {
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    border: 3px solid #1f496e;
+}
+
+@media(min-width:768px) {
+        .colio-navigation, .colio-close {
+            font-size: 20px;
+        }
+}
+
+
+
+//About me
+
+@media(min-width:420px) and (max-width:1199px) {
+    .text-centred .img-photo img {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+}
+
+@media(min-width:1200px) {
+    .text-centred {
+      min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+      min-height: 100vh; /* These two lines are counted as one :-)       */
+
+      display: flex;
+      align-items: center;
+
+        .img-photo {
+        align-self: flex-end;
+        img {
+            max-width: 100%;
+        }
+        }
+    }
+
+    #about-bg {
+        min-height: 100%;
+    }
+}
+
+//skills
+
+div#skills-bg {
+    // padding-bottom: @bottommargin + 45px;
+}
+
+div#skills-bg .page-header {
+    margin-top: 20px;
+}
+
+div#skills-bg .progress {
+  position: relative;
+  background-color: #808080;
+}
+
+div#skills-bg .progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+div#skills-bg .progress .progress-bar-skill {
+    background-color: #333333;
+}
+
+div#skills-bg .thumbnail {
+    border: none;
+    background-color: #F7F7F7;
+}
+
+
+div#skills-bg .thumbnail img {
+    margin: 0 auto;
+    max-height: 96px;
+    max-width: 100%;
+    transition: all .4s;
+}
+
+div#skills-bg .thumbnail h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.row-flex, .row-flex > div[class*='col-'] {  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.row-flex-wrap {
+    -webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    align-items: flex-end;
+    flex:0;
+}
+
+.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+     margin:-.2px; /* hack adjust for wrapping */
+}
+
+.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
+    width:100%;
+}
+
+
+.flex-col {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 100%;
+    flex-flow: column nowrap;
+}
+
+.flex-grow {
+    display: flex;
+    -webkit-flex: 2;
+    flex: 2;
+}
