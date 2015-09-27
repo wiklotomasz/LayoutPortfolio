@@ -18,6 +18,8 @@
 
         <!-- Other CSS -->
         <link rel="stylesheet" href="css/colio.css" media="screen">
+        <!-- bxSlider CSS file -->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/main.css">
@@ -159,10 +161,16 @@
     <section id="about" class="container">
 
         <div class="row text-centred">
-            <div class="col-lg-7 img-photo">
+            <div class="col-lg-6 img-photo">
                 <img src="img/tomasz.jpg" class="img-responsive" alt="author Tomasz Wiklo">
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-6">
+
+              <ul class="bxslider">
+                <li>
+
+
+
                     <div class="about-text">
                       <h1 class="page-header text-center">About me</h1>
                       <p>I'm a Front End Developer from Poznan, Poland.</p>
@@ -170,25 +178,53 @@
                       <button type="button" class="btn btn-visit btn-about"><i class="fa fa-download"></i> DOWNLOAD <span>CV</span></button>
                       <button type="button" class="btn btn-visit btn-about"><i class="fa fa-paper-plane"></i> HIRE <span>ME</span></button>
                     </div>
-            </div>
-        </div>
 
 
-    </section>
-    </div>
-    <!-- /.container -->
+                </li>
+                <li>
 
-      <!-- Page Content -->
-    <div id="experience-bg">
-    <section id="experience" class="container">
-
-        <div class="row text-centred">
-            <div class="col-lg-7 img-photo">
-                <img src="img/tomasz.jpg" class="img-responsive" alt="author Tomasz Wiklo">
-            </div>
-            <div class="col-lg-5">
 <!-- The Timeline -->
-<h1 class="page-header text-center">Experience</h1>
+<h1 class="page-header text-center">Education</h1>
+<ul class="timeline">
+
+  <!-- Item 1 -->
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="flag">Poznan University of Economics</span>
+        <span class="time-wrapper"><span class="time">2012 - 01.2015</span></span>
+      </div>
+      <div class="desc">Faculty of Informatics and Electronic Economy, programme: Informatics and Econometrics. Full-time postgraduate studies (MSc)</div>
+    </div>
+  </li>
+  
+  <!-- Item 2 -->
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="flag">Paris – Sud University, France</span>
+        <span class="time-wrapper"><span class="time">02.2013 – 06.2013</span></span>
+      </div>
+      <div class="desc">Faculty of Management, programme: study programme in English.</div>
+    </div>
+  </li>
+
+  <!-- Item 3 -->
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="flag">Poznan University of Economics</span>
+        <span class="time-wrapper"><span class="time">2009 – 2011</span></span>
+      </div>
+      <div class="desc">Faculty of Informatics and Electronic Economy. Full-time undergraduate studies (BSc) </div>
+    </div>
+  </li>
+  
+</ul>
+                </li>  
+                <li>
+
+                  <h1 class="page-header text-center">Experience</h1>
 <ul class="timeline">
 
   <!-- Item 1 -->
@@ -237,61 +273,10 @@
   
 </ul>
 
-            </div>
-        </div>
 
 
-    </section>
-    </div>
-    <!-- /.container -->
-
-      <!-- Page Content -->
-    <div id="experience-bg">
-    <section id="experience" class="container">
-
-        <div class="row text-centred">
-            <div class="col-lg-7 img-photo">
-                <img src="img/tomasz.jpg" class="img-responsive" alt="author Tomasz Wiklo">
-            </div>
-            <div class="col-lg-5">
-<!-- The Timeline -->
-<h1 class="page-header text-center">Education</h1>
-<ul class="timeline">
-
-  <!-- Item 1 -->
-  <li>
-    <div class="direction-r">
-      <div class="flag-wrapper">
-        <span class="flag">Poznan University of Economics</span>
-        <span class="time-wrapper"><span class="time">2012 - 01.2015</span></span>
-      </div>
-      <div class="desc">Faculty of Informatics and Electronic Economy, programme: Informatics and Econometrics. Full-time postgraduate studies (MSc)</div>
-    </div>
-  </li>
-  
-  <!-- Item 2 -->
-  <li>
-    <div class="direction-r">
-      <div class="flag-wrapper">
-        <span class="flag">Paris – Sud University, France</span>
-        <span class="time-wrapper"><span class="time">02.2013 – 06.2013</span></span>
-      </div>
-      <div class="desc">Faculty of Management, programme: study programme in English.</div>
-    </div>
-  </li>
-
-  <!-- Item 3 -->
-  <li>
-    <div class="direction-r">
-      <div class="flag-wrapper">
-        <span class="flag">Poznan University of Economics</span>
-        <span class="time-wrapper"><span class="time">2009 – 2011</span></span>
-      </div>
-      <div class="desc">Faculty of Informatics and Electronic Economy. Full-time undergraduate studies (BSc) </div>
-    </div>
-  </li>
-  
-</ul>
+                </li>
+              </ul>
 
             </div>
         </div>
@@ -632,11 +617,22 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery.colio.min.js"></script>
+        <!-- bxSlider Javascript file -->
+        <script src="js/vendor/jquery.bxslider.min.js"></script>
 
         <script type="text/javascript">
           $(document).ready(function(){
             $('#colio-items').colio({
               id: 'colio_1'
+            });
+          });
+
+          $(document).ready(function(){
+            $('.bxslider').bxSlider({
+              infiniteLoop: false,
+              hideControlOnEnd: true,
+              adaptiveHeight: true,
+              mode: 'fade'
             });
           });
         </script>
