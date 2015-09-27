@@ -333,6 +333,30 @@ div#works-bg a:hover, div#works-bg a:focus {
     }
 }
 
+.btn-about i{
+    padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+.btn-about {
+    padding: 15px 45px;
+}
+}
+.btn-about {
+    border: 1px solid #333333;
+    background: rgba(255,255,255,.12);
+}
+
+.btn-about:hover, .btn-about:focus, .btn-about:active {
+    border: 1px solid #333333;
+    color: #fff;
+    background: rgba(51,51,51,.3);
+}
+
+.about-text {
+  padding: 1em 0;
+}
+
 //skills
 
 div#skills-bg {
@@ -371,7 +395,7 @@ div#skills-bg .progress .progress-bar-skill {
 div#skills-bg .panel {
     border: none;
     background-color: #F7F7F7;
-        -webkit-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     &:hover {
@@ -686,10 +710,33 @@ div#skills-bg .panel .panel-footer {
   .timeline:before {
     left: 0%;
   }
+
+  .flag, .flag:after, .desc {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+
   .direction-r {
     float: left;
     left: 34px;
     width: 75%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    &:hover {
+        .flag{
+        background: #3E3E3E;
+        color: white;
+        &:after {
+            border-right-color: #3E3E3E;
+          }
+        }
+        .desc {
+          text-shadow: 5px 5px 20px #182019;
+        }
+
+    }
   }
   .direction-r .flag:before {
   width: 20px;
