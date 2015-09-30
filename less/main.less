@@ -367,6 +367,9 @@ div#works-bg a:hover, div#works-bg a:focus {
 
 .about-text {
   padding: 1em 0;
+  a {
+    color: #333;
+  }
 }
 
 //pager
@@ -869,17 +872,25 @@ div#skills-bg .panel .panel-footer {
 //Contact
 
 div#contact-bg {
-    padding-bottom: @bottommargin;
+    //padding-bottom: @bottommargin;
     background: url(../img/contact.jpg) no-repeat #0A80A4;
     //background: @contactcolor;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    display: table;
     min-width: 100%;
     min-height: 100%;
     color: @contactcolorsecond;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    #contact {
+      flex: 1;
+    }
     .form-control {
       padding: 10px 3%;
       margin: 10px 0;
@@ -946,11 +957,12 @@ div#contact-bg {
       &:hover {
         color: #FFF;
         text-decoration: none;
-        transition: all ease 0.3s;
-        -moz-transition: all ease 0.3s;
-        -webkit-transition: all ease 0.3s;
-        -o-transition: all ease 0.3s;
-        -ms-transition: all ease 0.3s;
+        transition: all ease 0.4s;
+        -moz-transition: all ease 0.4s;
+        -webkit-transition: all ease 0.4s;
+        -o-transition: all ease 0.4s;
+        -ms-transition: all ease 0.4s;
+        transform: rotate(360deg);
         }
       }
     .fa-facebook:hover { /* round facebook icon*/
@@ -971,6 +983,11 @@ div#contact-bg {
     .fa-envelope-o:hover {
     background: darken(@contactcolor, 20%);
     }
+    }
+    footer {
+    background-color: darken(@contactcolor, 30%);
+    padding: 20px;
+    text-align: center;
     }
 }
 
