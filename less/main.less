@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-frontend.jpg) no-repeat #f2bc32;
+    background: #f2bc32;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 
 div#works-bg {
     padding-bottom: @bottommargin;
-    background: url(../img/works-bg.jpg) no-repeat #0A80A4;
+    background: #0A80A4;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -456,7 +456,7 @@ div#works-bg a:hover, div#works-bg a:focus {
 
 div#skills-bg {
     // padding-bottom: @bottommargin + 45px;
-    background: url(../img/skills-bg.jpg) no-repeat @skillscolor;
+    background: @skillscolor;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -883,7 +883,7 @@ div#skills-bg .panel .panel-footer {
 
 div#contact-bg {
     //padding-bottom: @bottommargin;
-    background: url(../img/contact.jpg) no-repeat #0A80A4;
+    background: @contactcolor;
     //background: @contactcolor;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1049,5 +1049,25 @@ div#contact-bg {
         padding-top: 36px; 
       }
     }
+  }
+}
+
+//backgrounds for big screen
+@media only screen and (min-width: 668px) {
+  .intro {
+      background: url(../img/intro-frontend.jpg) no-repeat #f2bc32;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+  }
+  div#works-bg {
+    background: url(../img/works-bg.jpg) no-repeat #0A80A4;
+  }
+  div#skills-bg {
+    background: url(../img/skills-bg.jpg) no-repeat @skillscolor;
+  }
+  div#contact-bg {
+    background: url(../img/contact.jpg) no-repeat #C54B34;
   }
 }
