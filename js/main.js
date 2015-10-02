@@ -45,3 +45,40 @@ $(function() {
     }
   });
 });
+
+//menu fullscreen
+
+jQuery(document).ready(function($){
+  //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
+  var MQL = 1170;
+
+  $('.cd-primary-nav li a').on('click', function(){
+    $('.cd-primary-nav').removeClass('is-visible');
+    $('.cd-menu-icon').toggleClass('is-clicked'); 
+  });
+
+  //primary navigation slide-in effect
+  if($(window).width() > MQL) {
+    var headerHeight = $('.cd-header').height();
+    $(window).on('scroll',
+    {
+          previousTop: 0
+      });
+  }
+
+  //open/close primary navigation
+  $('.cd-primary-nav-trigger').on('click', function(){
+    $('.cd-menu-icon').toggleClass('is-clicked'); 
+    $('.cd-header').toggleClass('menu-is-open');
+    
+    //in firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
+    if( $('.cd-primary-nav').hasClass('is-visible') ) {
+      $('.cd-primary-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+      });
+    } else {
+      $('.cd-primary-nav').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+      }); 
+    }
+  });
+});
+
