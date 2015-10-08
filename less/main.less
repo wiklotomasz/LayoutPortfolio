@@ -454,6 +454,56 @@ div#works-bg a:hover, div#works-bg a:focus {
 
 //skills
 
+    #skills-div {
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    #brandlogo {
+    text-align: center;
+    padding: 0px;
+    margin: 10px 0px;
+    position: relative;
+    list-style: outside none none;
+    li {
+      float: none;
+      display: inline-block;
+      padding: 0px;
+      padding-right: 15px;
+      width: auto;
+      margin: 0;
+      margin-bottom: 15px;
+      img {
+        vertical-align: middle;
+        margin: 0 auto;
+        height: 60px;
+        width: 60px;
+        transition: all .4s;
+        -webkit-filter: grayscale(100%) brightness(100%) contrast(100%);
+        filter: grayscale(100%) brightness(135%) contrast(120%);
+      }
+      &:hover img {
+        -webkit-filter: none;
+        filter: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+
+    #brandlogo {
+      li {
+        padding-right: 20px;
+        margin-bottom: 20px;
+        img {
+          height: 70px;
+          width: 70px;
+        }
+      }
+    }
+
+  }
+
 div#skills-bg {
     // padding-bottom: @bottommargin + 45px;
     background: @skillscolor;
@@ -468,124 +518,6 @@ div#skills-bg {
 div#skills-bg .page-header {
     margin-top: 20px;
     color: @skillscolorsecond;
-}
-
-div#skills-bg .progress {
-  position: relative;
-  background-color: darken(@skillscolor, 15%);
-  display: none;
-}
-
-div#skills-bg .progress span {
-    position: absolute;
-    display: block;
-    width: 100%;
-    color: white;
-}
-
-div#skills-bg .progress .progress-bar-skill {
-      background-color: darken(@skillscolor, 30%);
-}
-
-.row-flex, .row-flex > div[class*='col-'] {  
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex:1 1 auto;
-}
-
-body:not(:-moz-handler-blocked) .row-flex, body:not(:-moz-handler-blocked) .row-flex > div[class*='col-'] {
-    display: block;
-  }
-
-div#skills-bg .panel {
-    border: none;
-    background-color: rgba(255,255,255,0.15);
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    &:hover img {
-      -webkit-filter: none;
-      filter: none;
-    }
-    &:hover {
-        background-color: lighten(@skillscolor, 20%);
-        .progress .progress-bar-skill {
-            background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
-            background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
-            background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
-            -webkit-background-size: 40px 40px;
-            background-size: 40px 40px;
-            -webkit-animation: progress-bar-stripes 2s linear infinite;
-            -o-animation: progress-bar-stripes 2s linear infinite;
-            animation: progress-bar-stripes 2s linear infinite;            
-        }
-    }
-}
-
-
-div#skills-bg .panel img {
-    margin: 0 auto;
-    max-height: 96px;
-    max-width: 100%;
-    transition: all .4s;
-    -webkit-filter: grayscale(100%) brightness(100%) contrast(100%);
-    filter: grayscale(100%) brightness(135%) contrast(120%);
-}
-
-/* Windows 10 Edge Browser one-liner method */
-
-.lt-ie9 div#skills-bg .panel img {
-    display: none;
-}
-
-_:-ms-lang(x), _:-webkit-full-screen, div#skills-bg .panel img {
-    display: none;
-}
-
-div#skills-bg .panel h3 {
-    margin-top: 10px;
-    font-size: 18px;
-    color: @skillscolorsecond;
-}
-
-div#skills-bg .panel .panel-footer {
-    background-color: transparent;
-    border-top: 0;
-}
-
-.row-flex, .row-flex > div[class*='col-'] {  
-    display: flex;
-    flex: 1 1 auto;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
-
-.row-flex-wrap {
-    -webkit-flex-flow: row wrap;
-    align-content: flex-start;
-    flex:0;
-}
-
-.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
-     margin:-.2px; /* hack adjust for wrapping */
-}
-
-.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
-    width:100%;
-}
-
-
-.flex-col {
-    display: flex;
-    display: -webkit-flex;
-    flex: 1 100%;
-    flex-flow: column nowrap;
-}
-
-.flex-grow {
-    display: flex;
-    -webkit-flex: 2;
-    flex: 2;
 }
 
 //experience
