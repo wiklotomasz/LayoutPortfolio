@@ -110,7 +110,7 @@
             <div class="col-lg-6 img-photo">
                 <img src="img/tomasz.jpg" class="img-responsive" alt="author Tomasz Wiklo">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 about-column">
 
               <ul class="bxslider">
                 <li>

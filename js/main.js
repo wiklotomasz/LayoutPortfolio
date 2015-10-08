@@ -1,5 +1,10 @@
   // Page scroller
-/*(function() {
+var win = $(window).height();
+var wid = $(window).width();
+
+if (win > 575 && wid > 1200 ) {
+    
+(function() {
   var delay = false;
 
   $(document).on('mousewheel DOMMouseScroll', function(event) {
@@ -28,7 +33,9 @@
       scrollTop: a[i].offsetTop
     });
   });
-})();*/
+})();
+
+}
 
 //
 
