@@ -1,5 +1,5 @@
   // Page scroller
-(function() {
+/*(function() {
   var delay = false;
 
   $(document).on('mousewheel DOMMouseScroll', function(event) {
@@ -28,7 +28,9 @@
       scrollTop: a[i].offsetTop
     });
   });
-})();
+})();*/
+
+//
 
 
 $(function() {

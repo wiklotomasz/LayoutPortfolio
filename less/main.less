@@ -473,6 +473,7 @@ div#skills-bg .page-header {
 div#skills-bg .progress {
   position: relative;
   background-color: darken(@skillscolor, 15%);
+  display: none;
 }
 
 div#skills-bg .progress span {
@@ -504,6 +505,10 @@ div#skills-bg .panel {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    &:hover img {
+      -webkit-filter: none;
+      filter: none;
+    }
     &:hover {
         background-color: lighten(@skillscolor, 20%);
         .progress .progress-bar-skill {
@@ -525,6 +530,8 @@ div#skills-bg .panel img {
     max-height: 96px;
     max-width: 100%;
     transition: all .4s;
+    -webkit-filter: grayscale(100%) brightness(100%) contrast(100%);
+    filter: grayscale(100%) brightness(135%) contrast(120%);
 }
 
 /* Windows 10 Edge Browser one-liner method */
@@ -1060,14 +1067,5 @@ div#contact-bg {
       -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover;
-  }
-  div#works-bg {
-    background: url(../img/works-bg.jpg) no-repeat #0A80A4;
-  }
-  div#skills-bg {
-    background: url(../img/skills-bg.jpg) no-repeat @skillscolor;
-  }
-  div#contact-bg {
-    background: url(../img/contact.jpg) no-repeat #C54B34;
   }
 }

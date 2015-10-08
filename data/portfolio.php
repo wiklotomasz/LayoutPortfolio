@@ -59,7 +59,7 @@
         $me_2 = new Portfolio('2', 'EventForYou.pl', 'Events agency from Poland', 'agencja-eventowa.jpg', 'http://www.eventforyou.pl/');
         $me_3 = new Portfolio('3', 'Studio Leopard', 'Company which offers websites designs', 'webdeveloping-website.jpg', 'http://studioleopard.com/');
         $me_4 = new Portfolio('4', 'BRIKS Architekci', 'Polish architects', 'architects.jpg', 'http://briks.com.pl/');
-        $me_5 = new Portfolio('5', 'Mrucon Group', 'Corporate website', 'corporate-website.jpg', 'http:/mrucon-group.com');
+        $me_5 = new Portfolio('5', 'Mrucon Group', 'Corporate website', 'corporate-website.jpg', 'http://www.mrucon-group.com');
         $me_6 = new Portfolio('6', 'Social Meister', 'Website for a social media agency', 'social-agency-website.jpg', 'http://socialmeister.pl/');
         $me_7 = new Portfolio('7', 'WIKOM', 'Website for tax advisor from Poznan', 'wikom.jpg', 'http://wikombiuro.pl/');
         $me_8 = new Portfolio('8', 'TRAN-SPED.NET', 'The shipping company from Poland', 'firma-spedycyjna-strona-internetowa.jpg', 'http://trans-sped.net/');
