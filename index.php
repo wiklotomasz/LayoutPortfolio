@@ -229,22 +229,22 @@
                       <h1 class="page-header text-center">Skills</h1>
                       <div id="skills-div">
                         <ul id="brandlogo">
-                          <li><img src="img/skills/html-5.svg" alt="..."></li>
-                          <li><img src="img/skills/css-3.svg" alt="..."></li>
-                          <li><img src="img/skills/iicon-js.png" alt="..."></li>
-                          <li><img src="img/skills/rwd.png" alt="..."></li>
-                          <li><img src="img/skills/jquery.svg" alt="..."></li>
-                          <li><img src="img/skills/wordpress-icon.svg" alt="..."></li>
-                          <li><img src="img/skills/bootstrap.svg" alt="..."></li>
-                          <li><img src="img/skills/grunt.svg" alt="..."></li>
-                          <li><img src="img/skills/git-icon.svg" alt="..."></li>
-                          <li><img src="img/skills/less.svg" alt="..."></li>
-                          <li><img src="img/skills/sass.svg" alt="..."></li>
-                          <li><img src="img/skills/angular-icon.svg" alt="..."></li>
-                          <li><img src="img/skills/photoshop.png" alt="..."></li>
-                          <li><img src="img/skills/drupal.svg" alt="..."></li>
-                          <li><img src="img/skills/php.svg" alt="..."></li>
-                          <li><img src="img/skills/england.png" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="HTML 5"><img src="img/skills/html-5.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="CSS 3"><img src="img/skills/css-3.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Javascript"><img src="img/skills/iicon-js.png" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Responsive Web Design"><img src="img/skills/rwd.png" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="jQuery"><img src="img/skills/jquery.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Wordpress"><img src="img/skills/wordpress-icon.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Bootstrap"><img src="img/skills/bootstrap.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Grunt"><img src="img/skills/grunt.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="GIT"><img src="img/skills/git-icon.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Less"><img src="img/skills/less.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Sass"><img src="img/skills/sass.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Angularjs"><img src="img/skills/angular-icon.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Photoshop"><img src="img/skills/photoshop.png" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="Drupal"><img src="img/skills/drupal.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="PHP 5"><img src="img/skills/php.svg" alt="..."></li>
+                          <li data-toggle="tooltip" data-placement="bottom" title="English"><img src="img/skills/england.png" alt="..."></li>
                         </ul>
                       </div>
 
@@ -275,11 +275,11 @@
             <div class="col-md-12">
                 <div class="social">
                   <ul>
-                      <li><a href="https://www.facebook.com/tomaszwiklo" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
-                      <li><a href="https://pl.linkedin.com/in/tomaszwiklo" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
-                      <li><a href="https://github.com/wiklotomasz" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
-                      <li><a href="#"><i class="fa fa-lg fa-file-text" target="_blank"></i></a></li>
-                      <li><a href="mailto:wikweb@gmail.com"><i class="fa fa-lg fa-envelope-o" target="_blank"></i></a></li>                                     
+                      <li data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/tomaszwiklo" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="Linkedin"><a href="https://pl.linkedin.com/in/tomaszwiklo" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="Github"><a href="https://github.com/wiklotomasz" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="CV"><a href="#"><i class="fa fa-lg fa-file-text" target="_blank"></i></a></li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="E-mail"><a href="mailto:wikweb@gmail.com"><i class="fa fa-lg fa-envelope-o" target="_blank"></i></a></li>                                     
                   </ul>
               </div>
             </div>
@@ -348,8 +348,6 @@
             });
           });
         </script>
-        <!--[if !IE]> -->
         <script src="js/main.js"></script>
-        <!-- <![endif]-->
     </body>
 </html>

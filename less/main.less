@@ -363,6 +363,7 @@ div#works-bg a:hover, div#works-bg a:focus {
 .btn-about {
     border: 1px solid #333333;
     background: rgba(255,255,255,.12);
+    border-radius: 15px;
 }
 
 .btn-about:hover, .btn-about:focus, .btn-about:active {
@@ -731,9 +732,6 @@ div#skills-bg .page-header {
     margin: 1em 0 0 0;
     padding: 1em;
     background: rgb(245,245,245);
-    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-    -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-    box-shadow: 0 0 1px rgba(0,0,0,0.20);
     
   z-index: 15;
 }
@@ -783,9 +781,6 @@ div#skills-bg .page-header {
         &:after {
             border-right-color: #3E3E3E;
           }
-        }
-        .desc {
-          text-shadow: 5px 5px 20px #182019;
         }
 
     }
@@ -844,8 +839,8 @@ div#contact-bg {
       padding: 10px 3%;
       margin: 10px 0;
       box-shadow: none;
-      border-radius: 0;
-      border: 1px solid darken(@contactcolor, 30%);
+      border-radius: 15px;
+      border: 1px solid transparent;
       background: rgba(0,0,0,.3);
       color: @contactcolorsecond;
       &::-webkit-input-placeholder { color: white; }
@@ -875,6 +870,8 @@ div#contact-bg {
     }
     .btn-send {
       border: 1px solid darken(@contactcolor, 20%);
+      border-radius: 15px;
+      width: 100%;
       padding: 15px 10px;
       min-width: 40%;
       color: darken(@contactcolor, 30%);
@@ -891,6 +888,8 @@ div#contact-bg {
     ul {
       margin: 0;
       padding: 5px;
+      .tooltip > .tooltip-inner {background-color: darken(@contactcolor, 20%);}
+      .tooltip > .tooltip-arrow { border-bottom-color:darken(@contactcolor, 20%); }
       li {
         margin: 5px;
         list-style: none outside none;
@@ -905,7 +904,6 @@ div#contact-bg {
       font-size: 22px;
       text-align:center;
       padding-top: 12px;
-      border: 1px solid @contactcolorsecond;
       border-radius: 50%;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
@@ -979,13 +977,6 @@ div#contact-bg {
       padding-bottom: 30px;
       li {
         padding: 0px 5px;
-      }
-      i {
-        width: 100px;
-        height: 100px;
-        color: #FFF;
-        font-size: 45px;
-        padding-top: 36px; 
       }
     }
   }
