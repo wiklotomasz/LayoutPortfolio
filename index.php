@@ -50,7 +50,6 @@
       <li><a href="#works">Works</a></li>
       <li><a href="#about">About me</a></li>
       <li><a class="cv" href="#0">Download CV</a></li>
-      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -223,318 +222,38 @@
 
 
                 </li>
+                <li>
+
+
+
+                      <h1 class="page-header text-center">Skills</h1>
+                      <div id="skills-div">
+                        <ul id="brandlogo">
+                          <li><img src="img/skills/html-5.svg" alt="..."></li>
+                          <li><img src="img/skills/css-3.svg" alt="..."></li>
+                          <li><img src="img/skills/iicon-js.png" alt="..."></li>
+                          <li><img src="img/skills/rwd.png" alt="..."></li>
+                          <li><img src="img/skills/jquery.svg" alt="..."></li>
+                          <li><img src="img/skills/wordpress-icon.svg" alt="..."></li>
+                          <li><img src="img/skills/bootstrap.svg" alt="..."></li>
+                          <li><img src="img/skills/grunt.svg" alt="..."></li>
+                          <li><img src="img/skills/git-icon.svg" alt="..."></li>
+                          <li><img src="img/skills/less.svg" alt="..."></li>
+                          <li><img src="img/skills/sass.svg" alt="..."></li>
+                          <li><img src="img/skills/angular-icon.svg" alt="..."></li>
+                          <li><img src="img/skills/photoshop.png" alt="..."></li>
+                          <li><img src="img/skills/drupal.svg" alt="..."></li>
+                          <li><img src="img/skills/php.svg" alt="..."></li>
+                          <li><img src="img/skills/england.png" alt="..."></li>
+                        </ul>
+                      </div>
+
+
+                </li>
               </ul>
 
             </div>
         </div>
-
-
-    </section>
-    </div>
-    <!-- /.container -->
-
-    <!-- Page Content -->
-    <div id="skills-bg">
-    <section id="skills" class="container  text-center">
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="page-header">Skills</h1>
-            </div>
-        </div>
-
-        <div class="row row-flex row-flex-wrap">  
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/html-5.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>HTML 5</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="show">80%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/css-3.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>CSS 3</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="show">80%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/iicon-js.png" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Javascript</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                <span class="show">50%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-                                     <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/rwd.png" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Responsive</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                <span class="show">80%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                  <div class="panel panel-default flex-col">
-                      <div class="panel-body flex-grow">
-                        <img src="img/skills/jquery.svg" alt="...">
-                      </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                                        <h3>jQuery</h3>
-                                        <div class="progress">
-                                          <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                            <span class="show">50%</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                   </div>
-                   </div>
-                </div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/wordpress-icon.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Wordpress</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                <span class="show">90%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/bootstrap.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Bootstrap</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                <span class="show">90%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div> </div>  
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/grunt.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Grunt</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                <span class="show">50%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/git-icon.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Git</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                <span class="show">70%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/less.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Less</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span class="show">60%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/sass.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Sass</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span class="show">60%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/angular-icon.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Angular</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                <span class="show">40%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/photoshop.png" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Photoshop</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span class="show">60%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/drupal.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Drupal</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="show">60%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/joomla.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>Joomla</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="show">60%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/php.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>PHP</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="show">60%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/php.svg" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>PHP</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="show">60%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div></div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                        <div class="panel panel-default flex-col">
-                   <div class="panel-body flex-grow">
-                          <img src="img/skills/england.png" alt="...">
-                          </div>
-                   <div class="panel-footer">
-                                      <div class="caption">
-                            <h3>English</h3>
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="show">60%</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-            </div>
-        </div>
-
 
 
     </section>
