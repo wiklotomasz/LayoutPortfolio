@@ -18,8 +18,8 @@
 
         <!-- Other CSS -->
         <link rel="stylesheet" href="css/menu.css"> <!-- Resource style -->
-        <link rel="stylesheet" href="css/colio.css" media="screen">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/portfolio.css">
         <!-- bxSlider CSS file -->
         <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
@@ -84,19 +84,122 @@
         </div>
         <!-- /.row -->
 
-        <!-- Projects Row -->
-        <div class="row" id="colio-items">
+  <div class="cd-projects-wrapper projects-visible">
+    <ul class="cd-slider">
+      <li class="current">
+        <a href="#0">
+          <img src="img/portfolio/architects.jpg" alt="project image">
+          <div class="project-info">
+            <h2>BRIKS Architekci</h2>
+            <p>Polish architects</p>
+          </div>
+        </a>
+      </li>
 
-          <?php
-          include 'data/portfolio.php';  // Works.
-          for ($x = 1; $x <= 12; $x++) {
-          echo ${'me_' . $x}->display(); 
-          }
-          ?>
+      <li>
+        <a href="#0">
+          <img src="img/portfolio/barcelona-point.jpg" alt="project image">
+          <div class="project-info">
+            <h2>BarcelonaPoint.com</h2>
+            <p>Holiday apartment rental</p>
+          </div>
+        </a>
+      </li>
 
-        </div>
-        <!-- /.row -->
+      <li>
+        <a href="#0">
+          <img src="img/portfolio/corporate-website.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Mrucon Group</h2>
+            <p>Corporate website</p>
+          </div>
+        </a>
+      </li>
 
+      <li>
+        <a href="#0">
+          <img src="img/portfolio/agencja-eventowa.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Project 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#0">
+          <img src="img/portfolio/agencja-eventowa.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Project 5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#0">
+          <img src="img/img.png" alt="project image">
+          <div class="project-info">
+            <h2>Project 6</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#0">
+          <img src="img/img.png" alt="project image">
+          <div class="project-info">
+            <h2>Project 7</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="#0">
+          <img src="img/img.png" alt="project image">
+          <div class="project-info">
+            <h2>Project 8</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#0">
+          <img src="img/img.png" alt="project image">
+          <div class="project-info">
+            <h2>Project 9</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="cd-slider-navigation cd-img-replace">
+      <li><a href="#0" class="prev inactive">Prev</a></li>
+      <li><a href="#0" class="next">Next</a></li>
+    </ul> <!-- .cd-slider-navigation -->
+  </div> <!-- .cd-projects-wrapper -->
+
+
+  <div class="cd-project-content">
+    <div>
+      <h2>Project title here</h2>
+      <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, ullam.</em>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus. 
+      </p>
+      <p>
+        Illum quaerat asperiores aliquam voluptate saepe omnis porro excepturi in atque veritatis sapiente ipsam voluptates iste amet deserunt ullam error pariatur, magni consectetur optio nostrum minima dolorum. Soluta animi nihil doloremque ipsa incidunt vitae architecto beatae, maxime libero, dolore corporis vero porro tenetur ipsam modi repudiandae magnam enim, quibusdam sit.
+      </p>
+      <p>
+        Illum quaerat asperiores aliquam voluptate saepe omnis porro excepturi in atque veritatis sapiente ipsam voluptates iste amet deserunt ullam error pariatur, magni consectetur optio nostrum minima dolorum. Soluta animi nihil doloremque ipsa incidunt vitae architecto beatae, maxime libero, dolore corporis vero porro tenetur ipsam modi repudiandae magnam enim, quibusdam sit.
+      </p>
+    </div>
+    <a href="#0" class="close cd-img-replace">Close</a>
+  </div> <!-- .cd-project-content -->
 
     </section>
     </div>
@@ -315,30 +418,18 @@
     </footer>
     </div>
     <!-- /.container -->
-    <?php
-      for ($x = 1; $x <= 12; $x++) {
-        echo ${'me_' . $x}->colioz(); 
-      }
-    ?>
-
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/vendor/jquery.colio.min.js"></script>
         <!-- bxSlider Javascript file -->
         <script src="js/vendor/jquery.bxslider.min.js"></script>
         <script type="text/javascript" src="js/vendor/validator.min.js"></script>
         <script type="text/javascript" src="js/vendor/form-scripts.js"></script>
+        <script src="js/vendor/jquery.mobile.custom.min.js"></script>
 
         <script type="text/javascript">
-          $(document).ready(function(){
-            $('#colio-items').colio({
-              id: 'colio_1'
-            });
-          });
-
           $(document).ready(function(){
             $('.bxslider').bxSlider({
               infiniteLoop: false,
@@ -348,6 +439,7 @@
             });
           });
         </script>
+        <script src="js/vendor/portfolio.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
