@@ -47,6 +47,9 @@ jQuery(document).ready(function(){
 			nextSides(projectsSlider);
 		} else {
 			singleProjectContent.addClass('is-visible');
+			$( "body" ).css( "overflow-y", "hidden" );
+			$( ".cd-project-content" ).css( "overflow-y", "scroll" );
+			$( "#top-menu" ).css( "display", "none" );
 		}
 	});
 
@@ -54,6 +57,8 @@ jQuery(document).ready(function(){
 	singleProjectContent.on('click', '.close', function(event){
 		event.preventDefault();
 		singleProjectContent.removeClass('is-visible');
+		$( "#top-menu" ).css( "display", "block" );
+		$( "body" ).css( "overflow-y", "scroll" );
 	});
 
 	//go to next/pre slide - clicking on the next/prev arrow

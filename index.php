@@ -38,7 +38,7 @@
         <![endif]-->
   <header class="cd-header">
 
-    <a class="cd-primary-nav-trigger" href="#0">
+    <a id="top-menu" class="cd-primary-nav-trigger" href="#0">
       <span class="cd-menu-icon"></span>
     </a> <!-- cd-primary-nav-trigger -->
 
@@ -87,93 +87,102 @@
   <div class="cd-projects-wrapper projects-visible">
     <ul class="cd-slider">
       <li class="current">
+        <div class="transition">
+          <a href="#0">
+            <img src="img/portfolio/barcelona-point.jpg" alt="project image">
+            <div class="project-info">
+              <h2>BRIKS Architekci</h2>
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="transition">
+          <a href="#0">
+            <img src="img/portfolio/agencja-eventowa.jpg" alt="project image">
+            <div class="project-info">
+              <h2>BarcelonaPoint.com</h2>
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="transition">
         <a href="#0">
           <img src="img/portfolio/architects.jpg" alt="project image">
           <div class="project-info">
-            <h2>BRIKS Architekci</h2>
-            <p>Polish architects</p>
+            <h2>Mrucon Group</h2>
           </div>
         </a>
+        </div>
       </li>
 
       <li>
-        <a href="#0">
-          <img src="img/portfolio/barcelona-point.jpg" alt="project image">
-          <div class="project-info">
-            <h2>BarcelonaPoint.com</h2>
-            <p>Holiday apartment rental</p>
-          </div>
-        </a>
-      </li>
-
-      <li>
+        <div class="transition">
         <a href="#0">
           <img src="img/portfolio/corporate-website.jpg" alt="project image">
           <div class="project-info">
-            <h2>Mrucon Group</h2>
-            <p>Corporate website</p>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a href="#0">
-          <img src="img/portfolio/agencja-eventowa.jpg" alt="project image">
-          <div class="project-info">
             <h2>Project 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           </div>
         </a>
+        </div>
       </li>
 
       <li>
+        <div class="transition">
         <a href="#0">
-          <img src="img/portfolio/agencja-eventowa.jpg" alt="project image">
+          <img src="img/portfolio/social-agency-website.jpg" alt="project image">
           <div class="project-info">
             <h2>Project 5</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
           </div>
         </a>
+        </div>
       </li>
 
       <li>
+        <div class="transition">
         <a href="#0">
-          <img src="img/img.png" alt="project image">
+          <img src="img/portfolio/wikom.jpg" alt="project image">
           <div class="project-info">
             <h2>Project 6</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat.</p>
           </div>
         </a>
+        </div>
       </li>
 
       <li>
+        <div class="transition">
         <a href="#0">
-          <img src="img/img.png" alt="project image">
+          <img src="img/portfolio/firma-spedycyjna-strona-internetowa.jpg" alt="project image">
           <div class="project-info">
             <h2>Project 7</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </a>
+        </div>
       </li>
       
       <li>
+        <div class="transition">
         <a href="#0">
-          <img src="img/img.png" alt="project image">
+          <img src="img/portfolio/szop-budka.jpg" alt="project image">
           <div class="project-info">
             <h2>Project 8</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           </div>
         </a>
+        </div>
       </li>
 
       <li>
+        <div class="transition">
         <a href="#0">
-          <img src="img/img.png" alt="project image">
+          <img src="img/portfolio/university-website.jpg" alt="project image">
           <div class="project-info">
             <h2>Project 9</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           </div>
         </a>
+        </div>
       </li>
     </ul>
 
@@ -186,19 +195,24 @@
 
   <div class="cd-project-content">
     <div>
-      <h2>Project title here</h2>
-      <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, ullam.</em>
+      <h2>BarcelonaPoint.com</h2>
+      <em>Przygotowanie nowego, odświeżonego wyglądu dla biura podróży z Hiszpanii.</em>
+      <div class="wyswietl-maca">
+          <div class="ekran-maca">
+            <img class="obrazek-portfolio" src="http://studioleopard.pl/wp-content/uploads/2015/03/barcelona-point-strona-www.png" alt="Strona www" title="Strona www wersja na komputer">   
+          </div>
+      </div>
+      <p class="details">Date: July 2014</p>
+      <p>Client: Perfect Sun Travel</p>
+      <p>Technologies: HTML, CSS, Javascript</p>
+      <p>Description: Website development for an event organised in Bydgoszcz and its administration throughout the entire event.</p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus. 
-      </p>
-      <p>
-        Illum quaerat asperiores aliquam voluptate saepe omnis porro excepturi in atque veritatis sapiente ipsam voluptates iste amet deserunt ullam error pariatur, magni consectetur optio nostrum minima dolorum. Soluta animi nihil doloremque ipsa incidunt vitae architecto beatae, maxime libero, dolore corporis vero porro tenetur ipsam modi repudiandae magnam enim, quibusdam sit.
-      </p>
-      <p>
-        Illum quaerat asperiores aliquam voluptate saepe omnis porro excepturi in atque veritatis sapiente ipsam voluptates iste amet deserunt ullam error pariatur, magni consectetur optio nostrum minima dolorum. Soluta animi nihil doloremque ipsa incidunt vitae architecto beatae, maxime libero, dolore corporis vero porro tenetur ipsam modi repudiandae magnam enim, quibusdam sit.
+        <button type="button" class="btn btn-visit btn-about"><i class="fa fa-external-link"></i> VISIT <span>ONLINE</span></button>
       </p>
     </div>
-    <a href="#0" class="close cd-img-replace">Close</a>
+    <a href="#0" class="close">
+    <span class="cd-menu-icon is-clicked"></span>
+    </a>
   </div> <!-- .cd-project-content -->
 
     </section>

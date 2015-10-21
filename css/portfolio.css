@@ -594,11 +594,9 @@ Project content panel
 }
 .cd-project-content > div {
   height: 100%;
-  overflow-y: auto;
   padding: 4em 2em;
 }
 .cd-project-content > div > * {
-  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }

@@ -264,66 +264,114 @@ div#works-bg a:hover, div#works-bg a:focus {
     font-weight: bold;
 }
 
-.portfolio-item div.transition {
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-    border:2px solid transparent;
-    background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
-    background: url(../img/tick11.png) 50% 50% no-repeat rgb(31, 73, 110);
-}
-
-#colio-items .portfolio-item:not(.colio-active-item) {
-    .transition{
-        background: url(../img/zoom.png) 50% 50% no-repeat rgb(31, 73, 110);
-    }
-}
-
-.colio-active-item div.transition, .portfolio-item div.transition:hover {
-    border: 2px solid white;
-}
-
-.portfolio-item img {
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
-  transition: opacity 0.25s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-
-}
-
-.colio-active-item img, .portfolio-item img:hover {
-    opacity:0.1;
-}
-
-.colio-content img {
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-    border: 3px solid #1f496e;
-}
-
-@media(min-width:768px) {
-        .colio-navigation, .colio-close {
-            font-size: 20px;
-        }
-}
-
 div#works-bg {
   .cd-slider {
+    padding: 0;
     list-style: none;
-    p {
-      margin-bottom: 0;
-    }
     h2 {
       margin-top: 0;
+      margin-bottom: 0;
       font-size: 1.5rem;
     }
+    .transition {
+      -moz-border-radius: 9px;
+      border-radius: 9px;
+      border:2px solid transparent;
+      background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+      background: url(../img/zoom.png) 50% 50% no-repeat rgb(31, 73, 110);
+      &:hover {
+        border: 2px solid white;
+      }
+    }
+    a {
+        -webkit-transition: opacity 0.25s ease-in-out;
+        -moz-transition: opacity 0.25s ease-in-out;
+        -o-transition: opacity 0.25s ease-in-out;
+        transition: opacity 0.25s ease-in-out;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+      &:hover {
+        opacity:0.1;
+        
+      }
+    }
+  }
+  .cd-slider-navigation {
+    a {
+      height: 190px;
+    }
+  }
+  .cd-project-content {
+      h2, em {
+        color: rgb(51, 51, 51);
+      }
+      .close {
+            position: fixed;
+            right: 0;
+            top: 30px;
+            height: 70px;
+            width: 70px;
+            background: rgba(0, 0, 0, 0.7);
+            opacity: 1;
+            span {
+              display: inline-block;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              bottom: auto;
+              right: auto;
+              -webkit-transform: translateX(-50%) translateY(-50%);
+              -moz-transform: translateX(-50%) translateY(-50%);
+              -ms-transform: translateX(-50%) translateY(-50%);
+              -o-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+              width: 18px;
+              height: 2px;
+              -webkit-transition: background-color 0.3s;
+              -moz-transition: background-color 0.3s;
+              transition: background-color 0.3s;
+              &:before {
+                top: 0;
+                -webkit-transform: rotate(135deg);
+                -moz-transform: rotate(135deg);
+                -ms-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
+                transform: rotate(135deg);
+                background-color: white;
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: white;
+                right: 0;
+                -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+                -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+                transition: transform .3s, top .3s, background-color 0s;
+              }
+              &:after {
+                top: 0;
+                -webkit-transform: rotate(225deg);
+                -moz-transform: rotate(225deg);
+                -ms-transform: rotate(225deg);
+                -o-transform: rotate(225deg);
+                transform: rotate(225deg);
+                background-color: white;
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: white;
+                right: 0;
+                -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+                -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+                transition: transform .3s, top .3s, background-color 0s;
+              }
+            }
+      }
   }
 }
 
-@media(min-width:768px) {
+@media(min-width:1200px) {
   div#works-bg .cd-slider h2 {
     font-size: 2.5rem;
   }
@@ -333,6 +381,44 @@ body {
   overflow-x:hidden;
 }
 
+
+//Portfolio element 
+
+.obrazek-portfolio {
+  max-width: 100%;
+}
+
+
+@media screen and (min-width: 1000px) {
+.wyswietl-maca {
+    position: relative;
+    padding: 49px 161px 27px;
+    margin-bottom: 77px;
+    color: #fff;
+    background: url('../img/icons/png/mcbook.png') 0 0 no-repeat;
+    background-size: 940px 778px;
+    background-size: 100%;
+    width: 940px;
+    height: 460px;
+    display: block;
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+  }
+.ekran-maca {
+    width: 618px;
+    overflow: hidden;
+    height: 330px;
+  }
+.obrazek-portfolio {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+}
 
 //About me
 
