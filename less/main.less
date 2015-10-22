@@ -297,10 +297,18 @@ div#works-bg {
     }
   }
   .cd-slider-navigation {
-    a {
-      height: 190px;
-    }
-  }
+      a {
+        height: 100%;
+        width: 200px;
+      }
+
+      .next {
+          right: -72px;
+        }
+      .prev {
+        left: -72px;
+      }
+      }
   .cd-project-content {
       h2, em {
         color: rgb(51, 51, 51);
@@ -384,40 +392,136 @@ body {
 
 //Portfolio element 
 
-.obrazek-portfolio {
+.obrazek-portfolio, .obrazek-iphone {
   max-width: 100%;
 }
 
 
 @media screen and (min-width: 1000px) {
-.wyswietl-maca {
-    position: relative;
-    padding: 49px 161px 27px;
-    margin-bottom: 77px;
-    color: #fff;
-    background: url('../img/icons/png/mcbook.png') 0 0 no-repeat;
-    background-size: 940px 778px;
-    background-size: 100%;
-    width: 940px;
-    height: 460px;
-    display: block;
-    position: relative;
-    clear: both;
-    margin: 0 auto;
-  }
-.ekran-maca {
-    width: 618px;
-    overflow: hidden;
-    height: 330px;
-  }
-.obrazek-portfolio {
-    display: block;
-    float: left;
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
+  .cd-project-content > div {
+    .screens-portfiolo {
+      position: relative;
+    }
+  .wyswietl-maca {
+      position: relative;
+      padding: 49px 161px 27px;
+      margin-bottom: 90px;
+      color: #fff;
+      background: url('../img/icons/png/mcbook.png') 0 0 no-repeat;
+      background-size: 940px 778px;
+      background-size: 100%;
+      width: 940px;
+      height: 479px;
+      display: block;
+      position: relative;
+      clear: both;
+      margin: 0 auto;
+    }
+  .ekran-maca {
+      width: 618px;
+      overflow: hidden;
+      height: 330px;
+    }
+  .obrazek-portfolio {
+      display: block;
+      float: left;
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
 
+  .wyswietl-iphona {
+      position: absolute;
+      bottom: 0;
+      left: 11%;
+      padding: 27px 6px 0;
+      margin-bottom: 77px;
+      color: #fff;
+      background: url('../img/icons/png/phone_mini.png') 0 0 no-repeat;
+      background-size: 116px 235px;
+      width: 117px;
+      height: 235px;
+      display: block;
+      clear: both;
+      margin: 0 auto;
+  }
+  .obrazek-iphone {
+      display: block;
+      float: left;
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  .ekran-iphona {
+      width: 100%;
+      overflow: hidden;
+      height: 183px;
+  }
+}
+}
+
+.cd-project-content {
+  .details {
+    text-align: left;
+    span {
+      color: black;
+    }
+  }
+}
+
+.cd-project-content > div {
+    max-width: 942px;
+    margin: 0 auto;
+    .v-centered {
+      float: none;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+    .page-header {
+      color: #333;
+      margin-bottom: 3px;
+      font-size: 22px;
+    }
+    p {
+      text-align: left;
+      .date {
+        float: right;
+      }
+    }
+    .visit-online {
+      .page-header {
+        text-align: left;
+      }
+      p {
+        text-align: center;
+      }
+    }
+}
+
+@media only screen and (max-height: 760px) and (max-width: 1200px){
+  .cd-project-content > div {
+    .page-header {
+        font-size: 28px;
+    }
+  }
+}
+
+@media only screen and (min-height: 760px) and (min-width: 800px){
+  .cd-project-content > div {
+    .page-header {
+        font-size: 38px;
+    }
+    .visit-online {
+      p {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.cd-project-content > div {
+    padding: 0;
 }
 
 //About me

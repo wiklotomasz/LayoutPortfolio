@@ -88,7 +88,7 @@
     <ul class="cd-slider">
       <li class="current">
         <div class="transition">
-          <a href="#0">
+          <a class="show-project" id="project-number-0" href="#0">
             <img src="img/portfolio/barcelona-point.jpg" alt="project image">
             <div class="project-info">
               <h2>BRIKS Architekci</h2>
@@ -99,7 +99,7 @@
 
       <li>
         <div class="transition">
-          <a href="#0">
+          <a class="show-project" id="project-number-1" href="#0">
             <img src="img/portfolio/agencja-eventowa.jpg" alt="project image">
             <div class="project-info">
               <h2>BarcelonaPoint.com</h2>
@@ -110,7 +110,7 @@
 
       <li>
         <div class="transition">
-        <a href="#0">
+        <a class="show-project" id="project-number-2" href="#0">
           <img src="img/portfolio/architects.jpg" alt="project image">
           <div class="project-info">
             <h2>Mrucon Group</h2>
@@ -195,20 +195,33 @@
 
   <div class="cd-project-content">
     <div>
-      <h2>BarcelonaPoint.com</h2>
-      <em>Przygotowanie nowego, odświeżonego wyglądu dla biura podróży z Hiszpanii.</em>
+      <h1 class="page-header text-center" id="ajax-name">BarcelonaPoint.com</h1>
+      <p class="author hidden-xs"><span id="ajax-company">Perfect Sun Travel</span> <span class="date" id="ajax-date">July 2012</span></p>
+      <div class="screens-portfiolo">
       <div class="wyswietl-maca">
           <div class="ekran-maca">
-            <img class="obrazek-portfolio" src="http://studioleopard.pl/wp-content/uploads/2015/03/barcelona-point-strona-www.png" alt="Strona www" title="Strona www wersja na komputer">   
+            <img class="obrazek-portfolio" id="ajax-big" src="http://studioleopard.pl/wp-content/uploads/2015/03/barcelona-point-strona-www.png" alt="Strona www" title="Strona www wersja na komputer">   
           </div>
       </div>
-      <p class="details">Date: July 2014</p>
-      <p>Client: Perfect Sun Travel</p>
-      <p>Technologies: HTML, CSS, Javascript</p>
-      <p>Description: Website development for an event organised in Bydgoszcz and its administration throughout the entire event.</p>
-      <p>
-        <button type="button" class="btn btn-visit btn-about"><i class="fa fa-external-link"></i> VISIT <span>ONLINE</span></button>
-      </p>
+      <div class="wyswietl-iphona">
+          <div class="ekran-iphona">
+            <img class="obrazek-iphone hidden-xs" id="ajax-small" src="http://studioleopard.pl/wp-content/uploads/2015/10/eventforyou_mobile.jpg" alt="Strona www" title="Strona www wersja na telefon">   
+          </div>
+      </div>
+      </div>
+      <div class="row">
+            <div class="col-md-8 details">
+                <h2 class="page-header">Details</h2>
+                <p>Technologies: <span id="ajax-technologies"> HTML, CSS, Javascript</span></p>
+                <p>Description: <span id="ajax-desc"> Website development for an event organised in Bydgoszcz and its administration throughout the entire event.</span></p>
+            </div>
+            <div class="col-md-4 visit-online">
+              <h2 class="page-header">Try it</h2>
+              <p>
+                <button type="button" class="btn btn-visit btn-about"><i class="fa fa-external-link"></i> VISIT <span>ONLINE</span></button>
+              </p>
+            </div>
+      </div>
     </div>
     <a href="#0" class="close">
     <span class="cd-menu-icon is-clicked"></span>
@@ -294,10 +307,10 @@
   <li>
     <div class="direction-r">
       <div class="flag-wrapper">
-        <span class="flag">Studio Leopard</span>
-        <span class="time-wrapper"><span class="time">04.2015 - present</span></span>
+        <span class="flag">Freelance</span>
+        <span class="time-wrapper"><span class="time">05.2012 - present</span></span>
       </div>
-      <div class="desc">CEO position. Working as a front end developer and project manager.</div>
+      <div class="desc">Web Designer/Front-End Developer</div>
     </div>
   </li>
   
@@ -322,27 +335,10 @@
       <div class="desc">Development of dedicated software for TIMAC Agro Sp. z o.o. (French company)</div>
     </div>
   </li>
-
-  <!-- Item 4 -->
-  <li>
-    <div class="direction-r">
-      <div class="flag-wrapper">
-        <span class="flag">Freelance</span>
-        <span class="time-wrapper"><span class="time">05.2012 - present</span></span>
-      </div>
-      <div class="desc">Web Designer/Front-End Developer</div>
-    </div>
-  </li>
   
 </ul>
-
-
-
-                </li>
+          </li>
                 <li>
-
-
-
                       <h1 class="page-header text-center">Skills</h1>
                       <div id="skills-div">
                         <ul id="brandlogo">
@@ -435,6 +431,9 @@
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        
+        <script type="text/javascript" src="js/vendor/ajax-json.js"></script>
+        
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <!-- bxSlider Javascript file -->
