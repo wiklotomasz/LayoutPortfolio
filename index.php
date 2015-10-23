@@ -18,8 +18,8 @@
 
         <!-- Other CSS -->
         <link rel="stylesheet" href="css/menu.css"> <!-- Resource style -->
-        <link rel="stylesheet" href="css/colio.css" media="screen">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/portfolio.css">
         <!-- bxSlider CSS file -->
         <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
@@ -38,7 +38,7 @@
         <![endif]-->
   <header class="cd-header">
 
-    <a class="cd-primary-nav-trigger" href="#0">
+    <a id="top-menu" class="cd-primary-nav-trigger" href="#0">
       <span class="cd-menu-icon"></span>
     </a> <!-- cd-primary-nav-trigger -->
 
@@ -49,7 +49,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#works">Works</a></li>
       <li><a href="#about">About me</a></li>
-      <li><a class="cv" href="#0">Download CV</a></li>
+      <li><a class="cv" href="download/cv_tomasz wiklo_en.pdf" download>Download CV</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -62,7 +62,7 @@
                         <p class="hello-text"><strong>Hello!</strong> I am</p>
                         <img src="img/tomasz-wiklo.jpg" alt="author-image" class="img-responsive img-circle">
                         <h1 class="brand-heading">Tomasz Wiklo</h1>
-                        <p class="intro-text">and i'm a polish front end developer nice to meet you!</p>
+                        <p class="intro-text">and I'm a polish front-end web developer nice to meet you!</p>
                         <a href="#works" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -84,19 +84,173 @@
         </div>
         <!-- /.row -->
 
-        <!-- Projects Row -->
-        <div class="row" id="colio-items">
-
-          <?php
-          include 'data/portfolio.php';  // Works.
-          for ($x = 1; $x <= 12; $x++) {
-          echo ${'me_' . $x}->display(); 
-          }
-          ?>
-
+  <div class="cd-projects-wrapper projects-visible">
+    <ul class="cd-slider">
+      <li class="current">
+        <div class="transition">
+          <a class="show-project" id="project-number-0" data-portfolio="project-number-0" href="#0">
+            <img src="img/portfolio/barcelona-point.jpg" alt="project image">
+            <div class="project-info">
+              <h2>BarcelonaPoint.com</h2>
+            </div>
+          </a>
         </div>
-        <!-- /.row -->
+      </li>
 
+      <li>
+        <div class="transition">
+          <a class="show-project" id="project-number-1" data-portfolio="project-number-1" href="#0">
+            <img src="img/portfolio/agencja-eventowa.jpg" alt="project image">
+            <div class="project-info">
+              <h2>EventForYou.pl</h2>
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-2" data-portfolio="project-number-2" href="#0">
+          <img src="img/portfolio/architects.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Briks.com.pl</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-3" data-portfolio="project-number-3" href="#0">
+          <img src="img/portfolio/corporate-website.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Mrucon-group.com</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-4" data-portfolio="project-number-4" href="#0">
+          <img src="img/portfolio/social-agency-website.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Socialmeister.pl</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-5" data-portfolio="project-number-5" href="#0">
+          <img src="img/portfolio/wikom.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Wikombiuro.pl</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-6"  data-portfolio="project-number-6"  href="#0">
+          <img src="img/portfolio/firma-spedycyjna-strona-internetowa.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Trans-sped.net</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+      
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-7"  data-portfolio="project-number-7"  href="#0">
+          <img src="img/portfolio/szop-budka.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Szopbudka.pl</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-8"  data-portfolio="project-number-8"  href="#0">
+          <img src="img/portfolio/university-website.jpg" alt="project image">
+          <div class="project-info">
+            <h2>University Conference</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-9"  data-portfolio="project-number-9"  href="#0">
+          <img src="img/portfolio/public-speaking.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Toastmasterspoznan.pl</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-10"  data-portfolio="project-number-10"  href="#0">
+          <img src="img/portfolio/mlm-sector-website.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Rentierzy.FM</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="cd-slider-navigation cd-img-replace">
+      <li><a href="#0" class="prev inactive">Prev</a></li>
+      <li><a href="#0" class="next">Next</a></li>
+    </ul> <!-- .cd-slider-navigation -->
+  </div> <!-- .cd-projects-wrapper -->
+
+
+  <div class="cd-project-content">
+    <div>
+      <h1 class="page-header text-center" id="ajax-name">BarcelonaPoint.com</h1>
+      <p class="author hidden-xs"><span id="ajax-company">Perfect Sun Travel</span> <span class="date" id="ajax-date">July 2012</span></p>
+      <div class="screens-portfiolo">
+      <div class="wyswietl-maca">
+          <div class="ekran-maca">
+            <img class="obrazek-portfolio" id="ajax-big" src="img/portfolio_projects/barcelona-point-strona-www.png" alt="Strona www" title="Strona www wersja na komputer">   
+          </div>
+      </div>
+      <div class="wyswietl-iphona">
+          <div class="ekran-iphona">
+            <img class="obrazek-iphone hidden-xs" id="ajax-small" src="img/portfolio_projects/eventforyou_mobile.jpg" alt="Strona www" title="Strona www wersja na telefon">   
+          </div>
+      </div>
+      </div>
+      <div class="row">
+            <div class="col-md-8 details">
+                <h2 class="page-header">Details</h2>
+                <p>Technologies: <span id="ajax-technologies"> HTML, CSS, Javascript</span></p>
+                <p>Description: <span id="ajax-desc"> Website development for an event organised in Bydgoszcz and its administration throughout the entire event.</span></p>
+            </div>
+            <div class="col-md-4 visit-online">
+              <h2 class="page-header">Try it</h2>
+              <p>
+                <a id="ajax-url" href="#" target="_blank"><button type="button" class="btn btn-visit btn-about"><i class="fa fa-external-link"></i> VISIT <span>ONLINE</span></button></a>
+              </p>
+            </div>
+      </div>
+    </div>
+    <ul class="next-prev-portfolio">
+      <li><a href="#0" id="show-prev-ajax"  data-portfolio="project-number-2" class="prev show-project">Prev</a></li>
+      <li><a href="#0" id="show-next-ajax"  data-portfolio="project-number-3" class="next show-project">Next</a></li>
+    </ul>
+    <a href="#0" class="close">
+    <span class="cd-menu-icon is-clicked"></span>
+    </a>
+  </div> <!-- .cd-project-content -->
 
     </section>
     </div>
@@ -121,7 +275,7 @@
                       <h1 class="page-header text-center">About me</h1>
                       <p>I'm a Front End Developer from Poznan, Poland.</p>
                       <p>I enjoy turning complex problems into simple, beautiful and intuitive websites. When I'm not coding, I love to play board games, watch classic movies and swim.</p>
-                      <button type="button" class="btn btn-visit btn-about"><i class="fa fa-download"></i> DOWNLOAD <span>CV</span></button>
+                      <a href="download/cv_tomasz wiklo_en.pdf" download type="button" class="btn btn-visit btn-about"><i class="fa fa-download"></i> DOWNLOAD <span>CV</span></a>
                       <a href="#contact" type="button" class="btn btn-visit btn-about page-scroll"><i class="fa fa-paper-plane"></i> HIRE <span>ME</span></a>
                     </div>
 
@@ -177,10 +331,10 @@
   <li>
     <div class="direction-r">
       <div class="flag-wrapper">
-        <span class="flag">Studio Leopard</span>
-        <span class="time-wrapper"><span class="time">04.2015 - present</span></span>
+        <span class="flag">Freelance</span>
+        <span class="time-wrapper"><span class="time">05.2012 - present</span></span>
       </div>
-      <div class="desc">CEO position. Working as a front end developer and project manager.</div>
+      <div class="desc">Web Designer/Front-End Developer</div>
     </div>
   </li>
   
@@ -205,27 +359,10 @@
       <div class="desc">Development of dedicated software for TIMAC Agro Sp. z o.o. (French company)</div>
     </div>
   </li>
-
-  <!-- Item 4 -->
-  <li>
-    <div class="direction-r">
-      <div class="flag-wrapper">
-        <span class="flag">Freelance</span>
-        <span class="time-wrapper"><span class="time">05.2012 - present</span></span>
-      </div>
-      <div class="desc">Web Designer/Front-End Developer</div>
-    </div>
-  </li>
   
 </ul>
-
-
-
-                </li>
+          </li>
                 <li>
-
-
-
                       <h1 class="page-header text-center">Skills</h1>
                       <div id="skills-div">
                         <ul id="brandlogo">
@@ -278,7 +415,7 @@
                       <li data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/tomaszwiklo" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
                       <li data-toggle="tooltip" data-placement="bottom" title="Linkedin"><a href="https://pl.linkedin.com/in/tomaszwiklo" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
                       <li data-toggle="tooltip" data-placement="bottom" title="Github"><a href="https://github.com/wiklotomasz" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
-                      <li data-toggle="tooltip" data-placement="bottom" title="CV"><a href="#"><i class="fa fa-lg fa-file-text" target="_blank"></i></a></li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="CV"><a href="download/cv_tomasz wiklo_en.pdf" download><i class="fa fa-lg fa-file-text" target="_blank"></i></a></li>
                       <li data-toggle="tooltip" data-placement="bottom" title="E-mail"><a href="mailto:wikweb@gmail.com"><i class="fa fa-lg fa-envelope-o" target="_blank"></i></a></li>                                     
                   </ul>
               </div>
@@ -315,30 +452,21 @@
     </footer>
     </div>
     <!-- /.container -->
-    <?php
-      for ($x = 1; $x <= 12; $x++) {
-        echo ${'me_' . $x}->colioz(); 
-      }
-    ?>
-
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        
+        <script type="text/javascript" src="js/vendor/ajax-json.js"></script>
+        
 
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/vendor/jquery.colio.min.js"></script>
         <!-- bxSlider Javascript file -->
         <script src="js/vendor/jquery.bxslider.min.js"></script>
         <script type="text/javascript" src="js/vendor/validator.min.js"></script>
         <script type="text/javascript" src="js/vendor/form-scripts.js"></script>
+        <script src="js/vendor/jquery.mobile.custom.min.js"></script>
 
         <script type="text/javascript">
-          $(document).ready(function(){
-            $('#colio-items').colio({
-              id: 'colio_1'
-            });
-          });
-
           $(document).ready(function(){
             $('.bxslider').bxSlider({
               infiniteLoop: false,
@@ -348,6 +476,7 @@
             });
           });
         </script>
+        <script src="js/vendor/portfolio.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
