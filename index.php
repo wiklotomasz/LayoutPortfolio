@@ -49,7 +49,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#works">Works</a></li>
       <li><a href="#about">About me</a></li>
-      <li><a class="cv" href="#0">Download CV</a></li>
+      <li><a class="cv" href="download/cv_tomasz wiklo_en.pdf" download>Download CV</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -88,19 +88,8 @@
     <ul class="cd-slider">
       <li class="current">
         <div class="transition">
-          <a class="show-project" id="project-number-0" href="#0">
+          <a class="show-project" id="project-number-0" data-portfolio="project-number-0" href="#0">
             <img src="img/portfolio/barcelona-point.jpg" alt="project image">
-            <div class="project-info">
-              <h2>BRIKS Architekci</h2>
-            </div>
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div class="transition">
-          <a class="show-project" id="project-number-1" href="#0">
-            <img src="img/portfolio/agencja-eventowa.jpg" alt="project image">
             <div class="project-info">
               <h2>BarcelonaPoint.com</h2>
             </div>
@@ -110,10 +99,21 @@
 
       <li>
         <div class="transition">
-        <a class="show-project" id="project-number-2" href="#0">
+          <a class="show-project" id="project-number-1" data-portfolio="project-number-1" href="#0">
+            <img src="img/portfolio/agencja-eventowa.jpg" alt="project image">
+            <div class="project-info">
+              <h2>EventForYou.pl</h2>
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-2" data-portfolio="project-number-2" href="#0">
           <img src="img/portfolio/architects.jpg" alt="project image">
           <div class="project-info">
-            <h2>Mrucon Group</h2>
+            <h2>Briks.com.pl</h2>
           </div>
         </a>
         </div>
@@ -121,10 +121,10 @@
 
       <li>
         <div class="transition">
-        <a href="#0">
+        <a class="show-project" id="project-number-3" data-portfolio="project-number-3" href="#0">
           <img src="img/portfolio/corporate-website.jpg" alt="project image">
           <div class="project-info">
-            <h2>Project 4</h2>
+            <h2>Mrucon-group.com</h2>
           </div>
         </a>
         </div>
@@ -132,10 +132,10 @@
 
       <li>
         <div class="transition">
-        <a href="#0">
+        <a class="show-project" id="project-number-4" data-portfolio="project-number-4" href="#0">
           <img src="img/portfolio/social-agency-website.jpg" alt="project image">
           <div class="project-info">
-            <h2>Project 5</h2>
+            <h2>Socialmeister.pl</h2>
           </div>
         </a>
         </div>
@@ -143,10 +143,10 @@
 
       <li>
         <div class="transition">
-        <a href="#0">
+        <a class="show-project" id="project-number-5" data-portfolio="project-number-5" href="#0">
           <img src="img/portfolio/wikom.jpg" alt="project image">
           <div class="project-info">
-            <h2>Project 6</h2>
+            <h2>Wikombiuro.pl</h2>
           </div>
         </a>
         </div>
@@ -154,10 +154,10 @@
 
       <li>
         <div class="transition">
-        <a href="#0">
+        <a class="show-project" id="project-number-6"  data-portfolio="project-number-6"  href="#0">
           <img src="img/portfolio/firma-spedycyjna-strona-internetowa.jpg" alt="project image">
           <div class="project-info">
-            <h2>Project 7</h2>
+            <h2>Trans-sped.net</h2>
           </div>
         </a>
         </div>
@@ -165,10 +165,10 @@
       
       <li>
         <div class="transition">
-        <a href="#0">
+        <a class="show-project" id="project-number-7"  data-portfolio="project-number-7"  href="#0">
           <img src="img/portfolio/szop-budka.jpg" alt="project image">
           <div class="project-info">
-            <h2>Project 8</h2>
+            <h2>Szopbudka.pl</h2>
           </div>
         </a>
         </div>
@@ -176,10 +176,30 @@
 
       <li>
         <div class="transition">
-        <a href="#0">
+        <a class="show-project" id="project-number-8"  data-portfolio="project-number-8"  href="#0">
           <img src="img/portfolio/university-website.jpg" alt="project image">
           <div class="project-info">
-            <h2>Project 9</h2>
+            <h2>University Conference</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-9"  data-portfolio="project-number-9"  href="#0">
+          <img src="img/portfolio/public-speaking.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Toastmasterspoznan.pl</h2>
+          </div>
+        </a>
+        </div>
+      </li>
+      <li>
+        <div class="transition">
+        <a class="show-project" id="project-number-10"  data-portfolio="project-number-10"  href="#0">
+          <img src="img/portfolio/mlm-sector-website.jpg" alt="project image">
+          <div class="project-info">
+            <h2>Rentierzy.FM</h2>
           </div>
         </a>
         </div>
@@ -200,12 +220,12 @@
       <div class="screens-portfiolo">
       <div class="wyswietl-maca">
           <div class="ekran-maca">
-            <img class="obrazek-portfolio" id="ajax-big" src="http://studioleopard.pl/wp-content/uploads/2015/03/barcelona-point-strona-www.png" alt="Strona www" title="Strona www wersja na komputer">   
+            <img class="obrazek-portfolio" id="ajax-big" src="img/portfolio_projects/barcelona-point-strona-www.png" alt="Strona www" title="Strona www wersja na komputer">   
           </div>
       </div>
       <div class="wyswietl-iphona">
           <div class="ekran-iphona">
-            <img class="obrazek-iphone hidden-xs" id="ajax-small" src="http://studioleopard.pl/wp-content/uploads/2015/10/eventforyou_mobile.jpg" alt="Strona www" title="Strona www wersja na telefon">   
+            <img class="obrazek-iphone hidden-xs" id="ajax-small" src="img/portfolio_projects/eventforyou_mobile.jpg" alt="Strona www" title="Strona www wersja na telefon">   
           </div>
       </div>
       </div>
@@ -218,11 +238,15 @@
             <div class="col-md-4 visit-online">
               <h2 class="page-header">Try it</h2>
               <p>
-                <button type="button" class="btn btn-visit btn-about"><i class="fa fa-external-link"></i> VISIT <span>ONLINE</span></button>
+                <a id="ajax-url" href="#" target="_blank"><button type="button" class="btn btn-visit btn-about"><i class="fa fa-external-link"></i> VISIT <span>ONLINE</span></button></a>
               </p>
             </div>
       </div>
     </div>
+    <ul class="next-prev-portfolio">
+      <li><a href="#0" id="show-prev-ajax"  data-portfolio="project-number-2" class="prev show-project">Prev</a></li>
+      <li><a href="#0" id="show-next-ajax"  data-portfolio="project-number-3" class="next show-project">Next</a></li>
+    </ul>
     <a href="#0" class="close">
     <span class="cd-menu-icon is-clicked"></span>
     </a>
@@ -251,7 +275,7 @@
                       <h1 class="page-header text-center">About me</h1>
                       <p>I'm a Front End Developer from Poznan, Poland.</p>
                       <p>I enjoy turning complex problems into simple, beautiful and intuitive websites. When I'm not coding, I love to play board games, watch classic movies and swim.</p>
-                      <button type="button" class="btn btn-visit btn-about"><i class="fa fa-download"></i> DOWNLOAD <span>CV</span></button>
+                      <a href="download/cv_tomasz wiklo_en.pdf" download type="button" class="btn btn-visit btn-about"><i class="fa fa-download"></i> DOWNLOAD <span>CV</span></a>
                       <a href="#contact" type="button" class="btn btn-visit btn-about page-scroll"><i class="fa fa-paper-plane"></i> HIRE <span>ME</span></a>
                     </div>
 
@@ -391,7 +415,7 @@
                       <li data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/tomaszwiklo" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
                       <li data-toggle="tooltip" data-placement="bottom" title="Linkedin"><a href="https://pl.linkedin.com/in/tomaszwiklo" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
                       <li data-toggle="tooltip" data-placement="bottom" title="Github"><a href="https://github.com/wiklotomasz" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
-                      <li data-toggle="tooltip" data-placement="bottom" title="CV"><a href="#"><i class="fa fa-lg fa-file-text" target="_blank"></i></a></li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="CV"><a href="download/cv_tomasz wiklo_en.pdf" download><i class="fa fa-lg fa-file-text" target="_blank"></i></a></li>
                       <li data-toggle="tooltip" data-placement="bottom" title="E-mail"><a href="mailto:wikweb@gmail.com"><i class="fa fa-lg fa-envelope-o" target="_blank"></i></a></li>                                     
                   </ul>
               </div>
