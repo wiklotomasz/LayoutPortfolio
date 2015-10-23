@@ -62,7 +62,7 @@
                         <p class="hello-text"><strong>Hello!</strong> I am</p>
                         <img src="img/tomasz-wiklo.jpg" alt="author-image" class="img-responsive img-circle">
                         <h1 class="brand-heading">Tomasz Wiklo</h1>
-                        <p class="intro-text">and i'm a polish front end developer nice to meet you!</p>
+                        <p class="intro-text">and I'm a polish front-end web developer nice to meet you!</p>
                         <a href="#works" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
